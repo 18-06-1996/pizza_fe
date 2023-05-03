@@ -28,8 +28,6 @@ useEffect(()=>{
                         </div>
                     </div> 
                   })
-
-        
                 }
   
 

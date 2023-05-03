@@ -1,5 +1,5 @@
 import React ,{useState}from 'react'
-// import pizzas from '../pizzadata'
+
 import { Modal } from 'react-bootstrap'
 import { useDispatch } from 'react-redux'
 import { addToCart } from '../actions/cartAction'

@@ -19,9 +19,10 @@ useEffect(()=>{
   return (
     <div className='row'>
 
-     
-      {  pizzas.map((pizza)=>{
-            return <div className='col-md-4' key={pizza._id}>
+
+
+      {  pizzas.map((pizza,index)=>{
+            return <div className='col-md-4' key={index}>
                         <div >
                           <Pizza pizza={pizza}/>
                         </div>

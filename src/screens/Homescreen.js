@@ -3,6 +3,9 @@ import { useDispatch,useSelector } from 'react-redux'
 
 import Pizza from '../components/Pizza'
 import { getAllPizzas } from '../actions/pizzaActions'
+
+
+
 const Homescreen = () => {
 
 const dispatch = useDispatch()
@@ -16,10 +19,8 @@ useEffect(()=>{
   return (
     <div className='row'>
 
-      {
-        loading ?(<h3> Loading</h3>): error ? (<h3>somthing went wrong</h3>) :(
-
-        pizzas.map((pizza)=>{
+     
+      {  pizzas.map((pizza)=>{
             return <div className='col-md-4' key={pizza._id}>
                         <div >
                           <Pizza pizza={pizza}/>
@@ -27,8 +28,8 @@ useEffect(()=>{
                     </div> 
                   })
 
-        )
-      }
+        
+                }
   
 
   
